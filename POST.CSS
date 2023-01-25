@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    background: #F6F6F6;
+}
+.navBar {
+    width: 100%;
+    height: fit-content;
+    background: rgba(255, 255, 0, 0);
+    display: flex;
+    justify-content: center;
+}
+ul li{
+    display: inline-block;
+}
+h2 {
+    color: blue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    margin: 5px;
+}
+.container {
+    width: 100%;
+    padding: 10px 025px;
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 30px;
+}
+.container .card {
+    height: 90px;
+    background: #F6F6F6;
+    /* box-shadow: 0 1px 4px 0 rgb(0 0 0 / 15%);
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4); 
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4); */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.container .card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: orangered;
+    clip-path: circle(0% at 0% 100%);
+    transition: all 0.5s ease-in-out;
+    z-index: -2;
+}
+.container .lenaAnderson::after {
+    background: linear-gradient(to right, #00c3ff, #ffff1c);
+}
+.container .card:hover::after {
+    clip-path: circle(75%);
+}
+h5 {
+    color: white;
+    text-transform: uppercase;
+    line-height: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 5px;
+    font-size: 15px;
+    z-index: -1;
+}
+.container .abellaDanger {
+    background: url(./POST—FOLDER/ABELLA-DANGER.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .alexaGrace {
+    background: url(./POST—FOLDER/ALEXA-GRACE.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .aliciaWilliams {
+    background: url(./POST—FOLDER/ALICIA-WILLIAMS.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .aleciaFox {
+    background: url(./POST—FOLDER/ALECIA-FOX.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .bunnyColby {
+    background: url(./POST—FOLDER/BUNNY-COLBY.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .caseyCalvert {
+    background: url(./POST—FOLDER/CASEY-CALVERT.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .danniRivers {
+    background: url(./POST—FOLDER/DANNI-RIVERS-01.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .elenaKoshka {
+    background: url(./POST—FOLDER/ELENA-KOSHKA-02.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .emilyWillis {
+    background: url(./POST—FOLDER/EMILY-WILLIS-01.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .evaElfie {
+    background: url(./POST—FOLDER/EVA-ELFIE-01.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .evelynClaire {
+    background: url(./POST—FOLDER/EVELYN-CLAIRE-04.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .emelieCrystal {
+    background: url(./POST—FOLDER/EMELIE-CRYSTAL.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .freyaMayer {
+    background: url(./POST—FOLDER/FREYA-MAYER-02.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .georgiaJones {
+    background: url(./POST—FOLDER/GEORGIA-JONES.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .haleyReed {
+    background: url(./POST—FOLDER/HALEY-REED-2.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .hazelMoore {
+    background: url(./POST—FOLDER/HAZEL-MOORE.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .ivyAura {
+    background: url(./POST—FOLDER/IVY-AURA-01.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .janiceGriffith {
+    background: url(./POST—FOLDER/JANICE-GRIFFITH-01.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .jayeSummers {
+    background: url(./POST—FOLDER/JAYE-SUMMERS.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .jessieSaint {
+    background: url(./POST—FOLDER/JESSIE-SAINT.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .jiaLissa {
+    background: url(./POST—FOLDER/JIA-LISSA-02.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .jillianJanson {
+    background: url(./POST—FOLDER/JILLIAN-JANSON.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .kendraSunderland {
+    background: url(./POST—FOLDER/KENDRA-SUNDERLAND-01.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .kennajames {
+    background: url(./POST—FOLDER/KENNA-JAMES.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .kylerQuinn {
+    background: url(./POST—FOLDER/KYLER-QUINN.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .lanaRhoades {
+    background: url(./POST—FOLDER/LANA-RHOADES.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .leahGotti {
+    background: url(./POST—FOLDER/LEAH-GOTTI-01.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .lacyLennon {
+    background: url(./POST—FOLDER/LACY-LENNON.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .lenaAnderson {
+    background: url(./POST—FOLDER/LENA-ANDERSON.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .lenaReif {
+    background: url(./POST—FOLDER/lena-reif.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .littleCaprice {
+    background: url(./POST—FOLDER/LITTLE-CAPRICE.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .liyaSilver {
+    background: url(./POST—FOLDER/LIYA-SILVER.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .maddyMay {
+    background: url(./POST—FOLDER/MADDY-MAY.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .melodyMarks {
+    background: url(./POST—FOLDER/MELODY-MARKS.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .naomiSwann {
+    background: url(./POST—FOLDER/NAOMI-SWANN.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .naomiWoods {
+    background: url(./POST—FOLDER/NAOMI-WOODS.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .riaSunn {
+    background: url(./POST—FOLDER/RIA-SUNN.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .stacyCruz {
+    background: url(./POST—FOLDER/STACY-CRUZ.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .sybil {
+    background: url(./POST—FOLDER/SYBIL.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .toriBlack {
+    background: url(./POST—FOLDER/TORI-BLACK.png);
+    background-position: center;
+    background-size: cover;
+}
+.container .umaJolie {
+    background: url(./POST—FOLDER/UMA-JOLIE.png);
+    background-position: center;
+    background-size: cover;
+}

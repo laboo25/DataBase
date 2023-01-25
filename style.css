@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-decoration: none;
+}
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: url(./images/nudecollect.com.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+.cata {
+    width: 500px;
+    height: 90px;
+    background: rgba(255, 0, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-gap: 10px;
+    position: absolute;
+    left: 50px;
+    bottom: 220px;
+}
+.com {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.48);
+-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.48);
+background-size: cover !important;
+background-position: center !important;
+}
+.catagory {
+    background: url(./images/Catagory.jpg);
+}
+.chanel {
+    background: url(./images/Chanel.jpg);
+}
+.stars {
+    background: url(./images/STARS.jpg);
+}
+h4 {
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 375px){
+    .banner {
+        width: 375px;
+        height: 667px;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+    }
+    .cata {
+        width: 265px;
+        height: 350px;
+        background: rgba(255, 0, 0, 0);
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+        grid-gap: 0px;
+        position: absolute;
+        left: 55px;
+        top: 160px;
+    }
+}
